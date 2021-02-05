@@ -1,6 +1,6 @@
 // Java Bean / POJO Plain Old Java Object 
 //Complete class
-public class BankAccount {
+public abstract class BankAccount {
 	private int accNo;
 	private String name;
 	private double bal;

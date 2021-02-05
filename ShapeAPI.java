@@ -1,5 +1,5 @@
 
-public class Shape {
+public class ShapeAPI {
 
 	public static void main(String[] args) {
 		
