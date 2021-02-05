@@ -15,8 +15,8 @@ public class Square extends Shapes {
 		return side;
 	}
 	
-	public double calcArea(double area) {
-		area = side * side;
+	public double calcArea() {
+		double area = side * side;
 		return area;
 	}
 }

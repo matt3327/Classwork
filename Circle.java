@@ -14,8 +14,8 @@ public class Circle extends Shapes{
 		return radius;
 	}
 	
-	public double calcArea(double area) {
-		area = radius * radius * 3.14;
+	public double calcArea() {
+		double area = radius * radius * 3.14;
 		return area;
 	}
 	

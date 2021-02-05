@@ -25,8 +25,8 @@ public class Triangle extends Shapes{
 		return base;
 	}
 	
-	public double calcArea(double area) {
-		area = (base * height) / 2;
+	public double calcArea() {
+		double area = (base * height) / 2;
 		return area;
 	}
 }

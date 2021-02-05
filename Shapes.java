@@ -6,8 +6,12 @@ public class Shapes {
 		area = 0;
 	}
 	
+	public void setArea() {
+		this.area = area;
+	}
 	public double calcArea()
 	{
 		return area;
 	}
+	
 }
