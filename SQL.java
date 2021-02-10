@@ -16,26 +16,23 @@ public class SQL {
 		
 		 // name, city
 		public String getProjectedField(){
-			int word = "select".length();
-			int start = statement.indexOf("Select");
-			int end = statement.indexOf("from");
-			return statement.substring(start+word,end);
+			String[] arr = statement.split("select");
+			String[] arr1 = arr[1].split("from");
+			return arr1[0];
 		}
 		
 		// get emp
 		public String getTableName(){
-			int word = "from".length();
-			int start = statement.indexOf("from");
-			int end = statement.indexOf("where");
-			return statement.substring(start+word,end);
+			String[] arr = statement.split("from");
+			String[] arr1 = arr[1].split(" ");
+			return arr1[0];
 		}
 		
 		// age > 20, city = New York
 		public String getConditions(){
-			int word = "where".length();
-			int start = statement.indexOf("where");
-			int end = statement.indexOf("order");
-			return statement.substring(start+word,end);
+			String[] arr =  statement.split("where");
+			String[] arr1 = arr[1].split("order by");
+			return arr1[0];
 		}
 	
 		// words such as and
@@ -50,14 +47,14 @@ public class SQL {
 	
 		// order by name
 		public String getOrder(){
-			int start = statement.indexOf("order");
-			int end = statement.length();
-			return statement.substring(start+8,end);
+			String[] arr = statement.split("order by");
+			String[] arr1 = arr[1].split(" ");
+			return arr1[0];
 		}
 	
 		public String getMainQuery(){
-			int start = statement.indexOf("order");
-			int end = statement.indexOf(getConditions())-5;
-			return statement.substring(0,end);
+			String[] arr = statement.split("order");
+			String[] arr1 = arr[1].split(" ");
+			return arr1[0];
 		}
 }
