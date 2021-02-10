@@ -16,8 +16,8 @@ public class SQLAPI {
 	      System.out.println("3-  Table name:"+ SQLObject.getTableName());
 	      System.out.println("4-  Conditions:"+ SQLObject.getConditions());
 	      System.out.println("5-  Logic Operator:"+ SQLObject.getLogicalOperator());
-	      System.out.println("6-  Order by:)-"+ SQLObject.getOrder());
-	      System.out.println("7-   Main Query:"+ SQLObject.getMainQuery());
+	      System.out.println("6-  Order by: "+ SQLObject.getOrder());
+	      System.out.println("7-  Main Query:"+ SQLObject.getMainQuery());
 		}
 }
 

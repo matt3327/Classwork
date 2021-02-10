@@ -7,7 +7,7 @@ public class SQL {
 		}
 	
 		public void setSQLStatement(String state){
-		statement = state;
+		statement = state.toLowerCase();
 		}
 	
 		public String getSQLStatement(){
@@ -53,7 +53,7 @@ public class SQL {
 		}
 	
 		public String getMainQuery(){
-			String[] arr = statement.split("order");
+			String[] arr = statement.split("order by");
 			String[] arr1 = arr[1].split(" ");
 			return arr1[0];
 		}
