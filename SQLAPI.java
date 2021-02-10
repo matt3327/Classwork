@@ -10,7 +10,8 @@ public class SQLAPI {
 	      String[] arr = SQLObject.getSQLStatement().split(" ");    
 
 	      for ( String ss : arr) {
-	          System.out.println(ss);
+	          System.out.print(ss);
+	          System.out.println(" ");
 	      }    
 	      System.out.println("2-  Protected Field:" + SQLObject.getProjectedField());
 	      System.out.println("3-  Table name:"+ SQLObject.getTableName());
