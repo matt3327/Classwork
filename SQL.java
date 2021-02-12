@@ -48,7 +48,7 @@ public class SQL {
 		// order by name
 		public String getOrder(){
 			String[] arr = statement.split("order by");
-			String[] arr1 = arr[1].split(" ");
+			String[] arr1 = arr[1].split(",");
 			return arr1[0];
 		}
 	
